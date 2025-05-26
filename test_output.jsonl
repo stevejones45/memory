@@ -1,5 +1,0 @@
-{"name": "test_user", "entityType": "person", "observations": ["likes programming", "works with AI"], "weight": 5, "type": "entity"}
-{"name": "Python", "entityType": "technology", "observations": ["programming language", "used for AI"], "weight": 3, "type": "entity"}
-{"name": "Claude", "entityType": "AI", "observations": ["helpful assistant", "created by Anthropic"], "weight": 1, "type": "entity"}
-{"from_entity": "test_user", "to_entity": "Python", "relationType": "uses", "type": "relation"}
-{"from_entity": "test_user", "to_entity": "Claude", "relationType": "interacts_with", "type": "relation"}
