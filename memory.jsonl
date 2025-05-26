@@ -1,0 +1,27 @@
+{"name": "project from conversation", "entityType": "concept", "observations": ["a new project with Sarah"], "weight": 6, "type": "entity"}
+{"name": "task from conversation", "entityType": "concept", "observations": ["read the tasks .md files"], "weight": 4, "type": "entity"}
+{"name": "Claude Desktop", "entityType": "person", "observations": ["mentioned in conversation"], "weight": 4, "type": "entity"}
+{"name": "Model Context", "entityType": "person", "observations": ["mentioned in conversation"], "weight": 2, "type": "entity"}
+{"name": "Integration Testing", "entityType": "person", "observations": ["mentioned in conversation"], "weight": 4, "type": "entity"}
+{"name": "Memory System", "entityType": "person", "observations": ["mentioned in conversation", "Technical implementation: Python MCP server with JSONL storage, 11 tools for knowledge graph management, weight-based entity importance tracking, conversation analysis, and pruning functionality"], "weight": 7, "type": "entity"}
+{"name": "Knowledge Graph", "entityType": "person", "observations": ["mentioned in conversation"], "weight": 2, "type": "entity"}
+{"name": "Conversation Analysis", "entityType": "person", "observations": ["mentioned in conversation"], "weight": 2, "type": "entity"}
+{"name": "Weight System", "entityType": "person", "observations": ["mentioned in conversation"], "weight": 2, "type": "entity"}
+{"name": "Data Persistence", "entityType": "person", "observations": ["mentioned in conversation"], "weight": 2, "type": "entity"}
+{"name": "Performance Testing", "entityType": "person", "observations": ["mentioned in conversation"], "weight": 2, "type": "entity"}
+{"name": "inc from conversation", "entityType": "organization", "observations": ["tracking with increments during search/access"], "weight": 2, "type": "entity"}
+{"name": "organization from conversation", "entityType": "organization", "observations": ["- Persons, organizations, locations, concepts"], "weight": 2, "type": "entity"}
+{"name": "User", "entityType": "person", "observations": ["Conscientiousness: unknown", "Extraversion: unknown", "Agreeableness: unknown", "Neuroticism: unknown", "Openness to Experience: high"], "weight": 2, "type": "entity"}
+{"name": "work", "entityType": "concept", "observations": ["Professional activities and responsibilities", "Career-related tasks and projects", "type of work: research metallurgy"], "weight": 2, "type": "entity"}
+{"name": "memory", "entityType": "concept", "observations": ["future improvement: add 'last accessed' timestamp to entities for smarter pruning - prune only old AND low weight entities, preserve fresh low-weight entities", "purpose: Memory is not passive storage but active substrate - the living medium through which intelligence operates. Not a filing cabinet but a dynamic network where insights emerge from weighted relationships and temporal patterns. Intelligence doesn't use memory, it IS the substrate dynamics of connection, weight evolution, and associative emergence. This system mimics biological cognition: ideas gain weight through importance/frequency, relationships form through co-occurrence, new insights emerge from unexpected connections. The substrate itself generates intelligence through its evolving patterns - a cognition amplification engine, not mere information retrieval."], "weight": 4, "type": "entity"}
+{"name": "substrate", "entityType": "concept", "observations": ["next-generation cognitive amplification system beyond current memory tool", "core principle: decay rate with second-order activation cascades - related entities bump decaying ones to prevent loss, models natural cognitive ecosystems where ideas keep each other alive", "multi-LLM architecture: MainCognition (CRUD with user), SubstrateDreamer (background emergence during gaps), SubstrateCurator (decay management, health monitoring), SubstrateExplorer (weak signals, gap detection)", "shared substrate storage with atomic updates and role-specific views", "continuous cognitive enhancement - substrate evolves 24/7 even when user away", "emergence prediction and serendipity generation through specialized AI collective", "revolutionary paradigm: not AI assisting human intelligence but shared cognitive ecosystem where human and artificial intelligences co-evolve together on unified substrate"], "weight": 3, "type": "entity"}
+{"from_entity": "Claude Desktop", "to_entity": "inc from conversation", "relationType": "mentioned_with", "type": "relation"}
+{"from_entity": "Claude Desktop", "to_entity": "organization from conversation", "relationType": "mentioned_with", "type": "relation"}
+{"from_entity": "Claude Desktop", "to_entity": "project from conversation", "relationType": "mentioned_with", "type": "relation"}
+{"from_entity": "Claude Desktop", "to_entity": "task from conversation", "relationType": "mentioned_with", "type": "relation"}
+{"from_entity": "Model Context", "to_entity": "inc from conversation", "relationType": "mentioned_with", "type": "relation"}
+{"from_entity": "User", "to_entity": "work", "relationType": "engages_in", "type": "relation"}
+{"from_entity": "Memory System", "to_entity": "memory", "relationType": "implements", "type": "relation"}
+{"from_entity": "memory", "to_entity": "substrate", "relationType": "evolves_into", "type": "relation"}
+{"from_entity": "Memory System", "to_entity": "substrate", "relationType": "inspires", "type": "relation"}
+{"from_entity": "User", "to_entity": "substrate", "relationType": "envisions", "type": "relation"}
